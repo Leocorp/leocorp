@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1">
+  <panorama id="node1" hideabout="1">
+    <view fovmode="0" pannorth="0">
+      <start pan="0" fov="70" tilt="0"/>
+      <min pan="0" fov="15" tilt="-90"/>
+      <max pan="360" fov="74" tilt="90"/>
+    </view>
+    <userdata title="3BR-Panorama" datetime="" description="" copyright="LEOCORP 2017" tags="" author="Ephson E. G" source="" comment="" info="" longitude="" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="180" backgroundalpha="0.54" enabled="1" height="30" backgroundcolor="#4b9ad4" bordercolor="0x000000" border="1" textcolor="0xffffff" borderalpha="0.54" borderradius="1" wordwrap="1" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x00aaff" bordercolor="0xffffff" borderalpha="1"/>
+      <polyhotspot title="Click to view the Living Room" target="" url="{node2}" id="Entrance">
+        <vertex pan="21.7477" tilt="13.9746"/>
+        <vertex pan="-24.0629" tilt="13.5509"/>
+        <vertex pan="-24.0629" tilt="-11.5728"/>
+        <vertex pan="21.7477" tilt="-10.1378"/>
+      </polyhotspot>
+    </hotspots>
+    <media/>
+    <input tile0url="images/3BR Porch_o_0.jpg" tile5url="images/3BR Porch_o_5.jpg" tilesize="960" tile4url="images/3BR Porch_o_4.jpg" tile3url="images/3BR Porch_o_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR Porch_o_2.jpg" tile1url="images/3BR Porch_o_1.jpg"/>
+    <altinput tile0url="images/3BR Porch_o_800_0.jpg" screensize="1000" tile5url="images/3BR Porch_o_800_5.jpg" tilesize="800" tile4url="images/3BR Porch_o_800_4.jpg" tile3url="images/3BR Porch_o_800_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR Porch_o_800_2.jpg" tile1url="images/3BR Porch_o_800_1.jpg"/>
+    <altinput tile0url="images/3BR Porch_o_600_0.jpg" screensize="748" tile5url="images/3BR Porch_o_600_5.jpg" tilesize="600" tile4url="images/3BR Porch_o_600_4.jpg" tile3url="images/3BR Porch_o_600_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR Porch_o_600_2.jpg" tile1url="images/3BR Porch_o_600_1.jpg"/>
+    <autorotate speed="0.300" nodedelay="5.00" startloaded="1" returntohorizon="0.000" delay="5.00"/>
+    <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="1" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="6"/>
+  </panorama>
+  <panorama id="node2" hideabout="1">
+    <view fovmode="0" pannorth="0">
+      <start pan="20" fov="58" tilt="5"/>
+      <min pan="-180" fov="15" tilt="-60.49516240244213"/>
+      <max pan="180" fov="74" tilt="60.49516240244213"/>
+    </view>
+    <userdata title="3BR-Panorama" datetime="" description="" copyright="LEOCORP 2017" tags="" author="Ephson E. G" source="" comment="" info="" longitude="" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="220" backgroundalpha="0.54" enabled="1" height="30" backgroundcolor="#4b9ad4" bordercolor="0x000000" border="1" textcolor="0xffffff" borderalpha="0.54" borderradius="1" wordwrap="1" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x00aaff" bordercolor="0xffffff" borderalpha="1"/>
+      <polyhotspot title="Click to switch to Wireframe mode" target="0/0/65" url="{node3}" id="wireframe">
+        <vertex pan="-88.17059999999999" tilt="16.4304"/>
+        <vertex pan="-123.75" tilt="13.6709"/>
+        <vertex pan="-123.194" tilt="-9.20806"/>
+        <vertex pan="-87.4573" tilt="-9.897869999999999"/>
+      </polyhotspot>
+      <polyhotspot title="Click to go to the Porch" target="" url="{node1}" id="exit">
+        <vertex pan="173.422" tilt="21.7502"/>
+        <vertex pan="146.028" tilt="18.84"/>
+        <vertex pan="145.98" tilt="-18.8303"/>
+        <vertex pan="173.132" tilt="-22.0272"/>
+      </polyhotspot>
+    </hotspots>
+    <media/>
+    <input tile0url="images/3BR-Normal_o_0.jpg" tile5url="images/3BR-Normal_o_5.jpg" tilesize="960" tile4url="images/3BR-Normal_o_4.jpg" tile3url="images/3BR-Normal_o_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Normal_o_2.jpg" tile1url="images/3BR-Normal_o_1.jpg"/>
+    <altinput tile0url="images/3BR-Normal_o_800_0.jpg" screensize="1000" tile5url="images/3BR-Normal_o_800_5.jpg" tilesize="800" tile4url="images/3BR-Normal_o_800_4.jpg" tile3url="images/3BR-Normal_o_800_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Normal_o_800_2.jpg" tile1url="images/3BR-Normal_o_800_1.jpg"/>
+    <altinput tile0url="images/3BR-Normal_o_600_0.jpg" screensize="748" tile5url="images/3BR-Normal_o_600_5.jpg" tilesize="600" tile4url="images/3BR-Normal_o_600_4.jpg" tile3url="images/3BR-Normal_o_600_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Normal_o_600_2.jpg" tile1url="images/3BR-Normal_o_600_1.jpg"/>
+    <autorotate speed="0.300" nodedelay="5.00" startloaded="1" returntohorizon="0.000" delay="5.00"/>
+    <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="1" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="6"/>
+  </panorama>
+  <panorama id="node3" hideabout="1">
+    <view fovmode="0" pannorth="0">
+      <start pan="26.5" fov="74" tilt="6"/>
+      <min pan="-180" fov="15" tilt="-60.49516240244213"/>
+      <max pan="180" fov="74" tilt="60.49516240244213"/>
+    </view>
+    <userdata title="3BR-Panorama" datetime="" description="" copyright="LEOCORP 2017" tags="" author="Ephson E. G" source="" comment="" info="" longitude="" latitude=""/>
+    <hotspots width="180" height="20" wordwrap="1">
+      <label width="220" backgroundalpha="0.54" enabled="1" height="30" backgroundcolor="#4b9ad4" bordercolor="0x000000" border="1" textcolor="0xffffff" borderalpha="0.54" borderradius="1" wordwrap="1" textalpha="1"/>
+      <polystyle mode="0" backgroundalpha="0.2509803921568627" backgroundcolor="0x00aaff" bordercolor="0xffffff" borderalpha="1"/>
+      <polyhotspot title="Click to switch to Normal mode" target="" url="{node2}" id="normal">
+        <vertex pan="-88.1075" tilt="15.246"/>
+        <vertex pan="-123.449" tilt="13.1249"/>
+        <vertex pan="-123.075" tilt="-9.0791"/>
+        <vertex pan="-88.07420000000001" tilt="-10.036"/>
+      </polyhotspot>
+    </hotspots>
+    <media/>
+    <input tile0url="images/3BR-Wireframe_o_0.jpg" tile5url="images/3BR-Wireframe_o_5.jpg" tilesize="960" tile4url="images/3BR-Wireframe_o_4.jpg" tile3url="images/3BR-Wireframe_o_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Wireframe_o_2.jpg" tile1url="images/3BR-Wireframe_o_1.jpg"/>
+    <altinput tile0url="images/3BR-Wireframe_o_800_0.jpg" screensize="1000" tile5url="images/3BR-Wireframe_o_800_5.jpg" tilesize="800" tile4url="images/3BR-Wireframe_o_800_4.jpg" tile3url="images/3BR-Wireframe_o_800_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Wireframe_o_800_2.jpg" tile1url="images/3BR-Wireframe_o_800_1.jpg"/>
+    <altinput tile0url="images/3BR-Wireframe_o_600_0.jpg" screensize="748" tile5url="images/3BR-Wireframe_o_600_5.jpg" tilesize="600" tile4url="images/3BR-Wireframe_o_600_4.jpg" tile3url="images/3BR-Wireframe_o_600_3.jpg" tilescale="1.010416666666667" tile2url="images/3BR-Wireframe_o_600_2.jpg" tile1url="images/3BR-Wireframe_o_600_1.jpg"/>
+    <autorotate speed="0.300" nodedelay="5.00" startloaded="1" returntohorizon="0.000" delay="5.00"/>
+    <control simulatemass="1" lockedmouse="0" lockedkeyboard="0" dblclickfullscreen="1" invertwheel="0" lockedwheel="0" invertcontrol="1" speedwheel="1" sensitivity="6"/>
+  </panorama>
+</tour>

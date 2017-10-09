@@ -1,0 +1,170 @@
+/* text--Virtual Tour */
+.intro_text{
+	padding: 5px;
+}
+.intro_text p{
+	text-align: justify;
+}
+
+.vt_panel_header{
+	background: rgba(0, 0, 0, 0.74); 
+	padding-top: 10px;
+	font-weight: bold;
+	color: white;
+}
+
+@media only screen and (max-width : 768px) and (orientation : portrait) {    
+    .vt_panel { margin-left: 0px }
+    .vt_tabs{ margin-left: 10px;}
+}
+
+.vt_panel{
+	padding: 10px;
+}
+.vt_cell{
+	margin-bottom: 10px;
+	background: rgba(255,  255,  255, 0.4);
+	color: black;
+	border: 1px solid white;
+	display: inline-block;
+	max-width: 380px;
+}
+
+.lcp_gold{
+	padding: 5px;
+	background: #f8bf62;
+}
+
+ul.vt_tabs{
+	list-style-type: none;
+	margin: 0px;
+}
+.vt_tabs li{
+	margin: 20px;
+}
+.vt_tabs li a{
+	padding: 5px;
+	background: #34495e;
+	border: 1px solid #00aeef
+}
+.vt_tabs li a:hover{
+	font-weight: bold;
+	background: #00aeef;
+}
+
+/************Container for the Panoramas*************/
+#container {
+	width:75vw; 
+	height:65vh;
+	
+}
+
+.vt_border{
+	
+	display: inline-block;
+	padding: 8px;
+	border: 1px solid black;
+}
+
+@media only screen and (max-width : 1024px) and (orientation : portrait) {    
+}
+
+@media only screen and (max-width : 768px) and (orientation : portrait) {    
+    
+}
+
+
+/************LAYOUT FOR THE INTERACTIVE TOURS*************/
+div canvas{
+    background-color: #171414;
+	/*background-color: #c72727;*/
+    /*background-image: url(backgroundTexture.png);*/
+}
+
+div.logo { 
+	width: 204px; 
+	height: 38px; 
+	background: url(brand.png) 0 0 no-repeat; 
+	z-index: 10; 
+	box-shadow: 1px 1px 0px black;
+}
+
+div.title { height: 38px; 
+	line-height: 38px; 
+	padding: 0 10px; 
+	color: #333; 
+	text-align: right; 
+	font-size: 18px; 
+	font-weight: bold; 
+	z-index: 10; 
+	float: left; 
+	box-shadow: 1px 1px 0px black;}
+
+.content{
+	display: inline-block;
+	background: white;
+}
+
+.debug{
+	border: 2px solid red;
+}
+
+.content canvas{
+	width:100%; 
+	height: auto;
+}
+
+.glass_frame
+{
+	padding: 8px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#info_panel{
+	padding: 5px;
+	background: rgba(0, 0, 0, 0.39);
+	color: rgba(248, 182, 60, 0.65);
+}
+#info_header{
+	text-align: justify;
+	padding: 5px;
+	display: block;
+	color: white;
+	background: black;
+}
+#info_instructions li{
+	color: #15ad04;
+}
+
+/****************************************
+  ==== PROGRESS BAR
+****************************************/
+
+div#loadingBox {
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+    }
+    
+div#progressBar {
+      left: 50%;
+      position: absolute;
+      margin-left: -155px;
+      width: 0px;
+      height: 2px;
+      background-color: white;
+      border-radius: 2px;
+}
+
+div#bgBar {
+      position: absolute;
+      width: 200px;
+      margin-left: -155px;
+      left: 50%;
+      height: 2px;
+      display: block;
+      background-color: #333;
+      border-radius: 2px;
+}

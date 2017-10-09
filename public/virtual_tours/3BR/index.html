@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>3BR-Panorama</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		
+		<script type="text/javascript">
+			// hide URL field on the iPhone/iPod touch
+			function hideUrlBar() {
+				
+				document.getElementsByTagName("body")[0].style.marginTop="1px";
+				window.scrollTo(0, 1);
+			}
+			window.addEventListener("load", hideUrlBar);
+			window.addEventListener("resize", hideUrlBar);
+			window.addEventListener("orientationchange", hideUrlBar);
+		</script>
+		<style type="text/css" title="Default">
+			body, div, h1, h2, h3, span, p {
+				font-family: Verdana,Arial,Helvetica,sans-serif;
+				color: #000000; 
+			}
+			body {
+			  font-size: 10pt;
+			  background : #ffffff; 
+			}
+			table,tr,td {
+				font-size: 10pt;
+				border-color : #777777;
+				background : #dddddd; 
+				color: #000000; 
+				border-style : solid;
+				border-width : 2px;
+				padding: 5px;
+				border-collapse:collapse;
+			}
+			h1 {
+				font-size: 18pt;
+			}
+			h2 {
+				font-size: 14pt;
+			}
+			.warning { 
+				font-weight: bold;
+			} 
+			/* fix for scroll bars on webkit & Mac OS X Lion */ 
+			::-webkit-scrollbar {
+				background-color: rgba(0,0,0,0.5);
+				width: 0.75em;
+			}
+			::-webkit-scrollbar-thumb {
+    			background-color:  rgba(255,255,255,0.5);
+			}
+		</style>
+        <link rel="stylesheet" href="../../css/app.css">
+	</head>
+	<body class="container-fluid">
+		<section>
+            <header class="header row">
+                <a href="/"><img src="../../images/header.png"/></a>
+            </header>
+            <br>
+            <script type="text/javascript" src="pano2vr_player.js">
+            </script>
+            <script type="text/javascript" src="skin.js">
+            </script>
+            <script type="text/javascript" src="pano2vrgyro.js">
+            </script>
+            <div class="row">
+                <div class="col-sm-2 pull-left" id="info_panel">
+                <div class="text-center" id="info_header">HELLO &amp; WELCOME!!</div>
+                <ul id="info_instructions">
+                    <li>To begin the simulation, please assume a comforting posture, position your mouse and follow the instructions outlined below:</li>
+                </ul>
+                <br>
+                <div class="text-center" id="info_header">SIMPLE INSTRUCTIONS</div>
+                <ul id="info_instructions">
+                    <li>Press and drag with the <span style="color:black; background: #f8bf62;">"left mouse button [LMB]"</span> to look around.</li>
+                    
+                </ul>
+                <br>
+                <div class="text-center" id="info_header">SEND US A MAIL</div>
+                <div class="text-center">
+                    <span style="color: #15ad04;"><a href="mailto:leocorp@leocorp.net?subject=Enquiry">@leocorp.net</a></span>
+                </div>
+                <br>
+                <ul class="social pull-right">
+                    <li><a href="https://www.facebook.com/leocorpGh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="google.com/+EphsonEGuakroLeoCorP" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://twitter.com/leo_pendraco" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCL_uqA3uXDUs7-gNLOjQ0rw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                
+            </div>
+                <div class="content col-sm-10">
+                    <div class="vt_border">
+                        <div id="container">
+                            <p>This content requires HTML5/CSS3, WebGL, or Adobe Flash Player Version 9 or higher.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center intro_text" id="info_header">
+                        <span style="color:white;">A panoramic display of the various sections of the Complex.</span>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+
+
+                // create the panorama player with the container
+                pano=new pano2vrPlayer("container");
+                // add the skin object
+                skin=new pano2vrSkin(pano);
+                // load the configuration
+                pano.readConfigUrl("3BR Porch_out.xml");
+                // hide the URL bar on the iPhone
+                hideUrlBar();
+                // add gyroscope controller
+                gyro=new pano2vrGyro(pano,"container");
+            </script>
+            <noscript>
+                <p><b>Please enable Javascript!</b></p>
+            </noscript>
+        </section>
+	</body>
+</html>

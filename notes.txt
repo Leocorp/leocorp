@@ -1,0 +1,36 @@
+use 'php artisan app:name = name' to change the name of the namespace
+		
+use this to generate html links inside laravel blade {!!Html::link('link','name')!!}
+
+use 'composer require components/font-awesome' to add font awesome to your project
+	and then add a reference to it in your app.scss file:
+		@import "vendor/components/font-awesome/scss/font-awesome.scss";
+		
+		
+NOTE: Import the "Kongregate WEBGL Utilities":
+	+Determining the amount of memory required.
+	
+	
+	Route::group(['middleware' => 'admin'], function(){
+	Route::get('controlpanel', 'AdministrationController@ControlPanel');
+});
+	
+	
+DEALING WITH THE POST TOO LARGE EXCEPTION:
+Here is what I did;
+1- insert 'phpinfo()' to determine the path of the php.ini used by laravel
+2- go to the location and if php.ini doesn't exist, create it as a copy of
+   the 'php.ini.default' usind the sudo & cp commands.
+3- now open the php.ini in vi(using sudo since its readonly) and edit the ff;
+	-post_file_size = xXM
+	-upload_file_max = xXM
+	make sure the former is larger than the later
+4- now restart apache and voila, you are good to go
+
+
+@section('scripts')
+	<script src="{{ asset('js/pano2vr_player.js') }}"></script>
+	<script src="{{ asset('js/skin.js') }}"></script>
+	<script src="{{ asset('js/pano2vrgyro.js') }}"></script>
+	<script src="{{ asset('js/pano.js') }}"></script>
+@endsection

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>3BR-Complex</title>
+        
+        <!-- Direct Links -->
+        <link rel="shortcut icon" href="../../favicon.ico">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+        <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script src="includes/UnityProgress.js"></script>
+        
+        <!-- Links to Main Project -->
+        <link rel="stylesheet" href="../../css/app.css">
+        
+    </head>
+    
+    <body class="container-fluid">
+        <section>
+        <header class="header row">
+            <a href="/"><img src="../../images/header.png"/></a>
+        </header>
+        <br>
+        <div class="row">
+            <div class="col-sm-2 pull-left" id="info_panel">
+                <div class="text-center" id="info_header">HELLO &amp; WELCOME!!</div>
+                <ul id="info_instructions">
+                    <li>To begin the simulation, please assume a comforting posture, position your mouse and follow the instructions outlined below:</li>
+                </ul>
+                <br>
+                <div class="text-center" id="info_header">SIMPLE INSTRUCTIONS</div>
+                <ul id="info_instructions">
+                    <li>Click on <span style="color:black; background: #f8bf62;">"Run"</span> to start the program.</li>
+                    <li>Press <span style="color:black; background: #f8bf62;">"Escape"</span> when the browser pop-up shows.</li>
+                    <li>Press and hold the <span style="color:black; background: #f8bf62;">"left mouse button [LMB]"</span> to move.</li>
+                    <li>Press the <span style="color:black; background: #f8bf62;">"right mouse button [RMB]"</span> to interact with the environment.</li>
+                    <li>You can press <span style="color:black; background: #f8bf62;">"P"</span> anytime during the execution to toggle between Play/Pause.</li>
+                    <li>Press <span style="color:black; background: #f8bf62;">"the blue-shaded square"</span> to go fullscreen. To exit fullscreen mode, press <span style="color:black; background: #f8bf62;">"Escape"</span> </li>
+                </ul>
+                <br>
+                <div class="text-center" id="info_header">SEND US A MAIL</div>
+                <div class="text-center">
+                    <span style="color: #15ad04;"><a href="mailto:red-console@leocorp.net?subject=Enquiry">@leocorp.net</a></span>
+                </div>
+                <br>
+                <ul class="social pull-right">
+                    <li><a href="https://www.facebook.com/leocorpGh" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="google.com/+EphsonEGuakroLeoCorP" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://twitter.com/leo_pendraco" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCL_uqA3uXDUs7-gNLOjQ0rw" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+                
+            </div>
+            <div class="content col-sm-10">
+                <div class="glass_frame">
+                    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+                </div>
+                
+                <div id="loadingBox" class="text-center">
+                    <div id="bgBar"></div>
+                    <div id="progressBar"></div>
+                    <p id="loadingInfo">Loading...</p>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="logo col-sm-3 col-sm-offset-2 "></div>
+                    <div class="col-sm-3 col-sm-offset-3 ">
+                        <div>
+                            <div class="title">3BR-Complex</div>
+                            <img src="includes/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" class="pull-right" onclick="SetFullscreen(1);" />
+                        </div>
+                    </div> 
+                </div>
+
+            </div>
+        <script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/3BR-Complex.data",
+    codeUrl: "Release/3BR-Complex.js",
+    memUrl: "Release/3BR-Complex.mem",
+  };
+</script>
+        <script src="Release/UnityLoader.js"></script>
+        </div>
+        </section>
+    </body>
+</html>
